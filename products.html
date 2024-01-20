@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>All Product</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Orbitron&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+
+<div class="container">
+    <div class="navbar">
+        <div class="logo">
+            <a href="index.html"><img src="images/shoelogo-removebg-preview (1).png" width="125px"></a>
+        </div>
+        <nav>
+            <ul id="Menuitems" style="color: black;">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="products.html">Product</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="partners.html">Partners</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+        <a href="cart.html"><img src="images/trolley.png" width="30px" height="30px"></a> 
+        <img src="images/icons8-menu-50.png" class="menu-icon" onclick="menutoggle()">
+    </div> 
+ 
+</div>
+</div>
+
+
+<div class="small-container">
+    
+    <div class="row row-2">
+        <h2>All Products</h2>
+        <select id="sortSelect" onchange="sortProducts()">
+            <option value="default">Default Sorting</option>
+            <option value="price">Sort by Price</option>
+            <option value="alphabetical">Sort by A-Z</option>
+        </select>
+    </div>
+
+    <div class="row" id="product-list">
+        <div class="col-4">
+            <a href="product_details.html"><img src="images/air-force-1-07-shoes-0XGfD7 (1).png"></a>
+            <h4>Nike Air Force 1 '07</h4>
+            <div class="rating">
+            </div>
+            <p>₱6,195</p>
+        </div>
+        <div class="col-4">
+            <a href="product_details.html"><img src="images/air-force-1-07-shoes-WrLlWX (1).png"></a>
+            <h4>Nike Air Force 1</h4>
+            <div class="rating">
+            </div>
+            <p>₱5,400</p>
+        </div>
+        <div class="col-4">
+            <a href="product_details.html"><img src="images/dunk-low-shoes-r8QXCd (1).png"></a>
+            <h4>Nike Dunk Low Panda</h4>
+            <div class="rating">
+            </div>
+            <p>₱7,300</p>
+        </div>
+        <div class="col-4">
+            <a href="product_details.html"><img src="images/air-jordan-11-gratitude-shoes-gMjfzz (1).png"></a>
+            <h4>Air Jordan 11 Gratitude</h4>
+            <div class="rating">
+            </div>
+            <p>₱10,900</p>
+        </div>
+            <div class="col-4">
+                <a href="product_details.html"><img src="images/air-jordan-1-low-se-chinese-new-year-shoes-rrFtkX.png"></a>
+                <h4>Jordan 1 Low Year of the Dragon</h4>
+                <div class="rating">
+                </div>
+                <p>₱10,900</p>
+            </div>
+            <div class="col-4">
+                <a href="product_details.html"><img src="images/dunk-low-retro-shoe-66RGqF (1).png"></a>
+                <h4>Nike Dunk Low Retro</h4>
+                <div class="rating">
+                </div>
+                <p>₱5,495</p>
+            </div>
+            <div class="col-4">
+                <a href="product_details.html"><img src="images/air-jordan-1-low-se-shoes-ZbxSRp (1).jpg"></a>
+                <h4>Air Jordan 1 Low SE</h4>
+                <div class="rating">
+                </div>
+                <p>₱6,395</p>
+            </div>
+            <div class="col-4">
+                <a href="product_details.html"><img src="images/vanss.webp"></a>
+                <h4>Lowland ComfyCush JMP R Shoe</h4>
+                <div class="rating">
+                </div>
+                <p>₱5,700</p>
+            </div>
+            <div class="col-4">
+                <a href="product_details.html"><img src="images/gtcut3.webp"></a>
+                <h4>Nike Air Zoom G.T. Cut 3 EP 'White and Picante Red'</h4>
+                <div class="rating">
+                </div>
+                <p>₱10,295</p>
+            </div>
+            <div class="col-4">
+                <a href="product_details.html"><img src="images/chuck70.jpg"></a>
+                <h4>Chuck 70</h4>
+                <div class="rating">
+                </div>
+                <p>₱4,390</p>
+            </div>
+            <div class="col-4">
+                <a href="product_details.html"><img src="images/FV1291-100-C_1082x.webp"></a>
+                <h4>Nike Ja 1 EP 'CNY'</h4>
+                <div class="rating">
+                </div>
+                <p>₱7,395</p>
+            </div>
+            <div class="col-4">
+                <a href="product_details.html"><img src="images/j3.webp"></a>
+                <h4>Air Jordan 3 Retro GS 'Midnight Navy'</h4>
+                <div class="rating">
+                </div>
+                <p>₱7,695</p>
+        </div>
+    </div>
+
+    <div class="page-btn">
+        <span>1</span>
+        <span>2</span>
+        <span>&#8594;</span>
+    </div>
+</div>
+
+
+
+<!------ footer------------->
+
+
+<div class="footer">
+    <div class="container">
+        <div class="row">
+            <div class="footer-col-1">
+                <p>Gateway Mall 2 <br>255 General Araneta, Cubao, Quezon City, 1109 Metro Manila</p><br>
+                <p>1shoe3@gmail.com</p><br>
+                <p>010-020-030</p><br>
+                <p>Hours: <br> 11:00AM - 10:00PM</p>
+            </div>
+            <div class="footer-col-2">
+                <img src="images/shoelogo.png">
+                <p>©2024 1-SHOE-3 Inc., All Rights Reserved</p>
+            </div>
+            <div class="footer-col-3">
+                <h3>Information</h3>
+                <ul>
+                    <li>Contact Us</li>
+                    <li>About Us </li>
+                    <li>FAQS</li>
+                    <li>Terms of Service</li>
+                    <li>Policy</li>
+                </ul>
+            </div>
+            <div class="footer-col-4">
+                <h3>Follow Us</h3>
+                <ul>
+                    <li><i class="fa-brands fa-facebook"></i></li>
+                    <li><i class="fa-brands fa-instagram"></i></li>
+                    <li><i class="fa-brands fa-youtube"></i></li>
+                </ul>
+        </div>
+    </div>
+</div>
+
+
+
+<!------ js toggle------------->
+<script>
+    // Initialize an array to store the original order
+var originalOrder = Array.from(document.getElementById("product-list").getElementsByClassName("col-4"));
+
+function sortProducts() {
+    var select = document.getElementById("sortSelect");
+    var selectedValue = select.value;
+
+    var productList = document.getElementById("product-list");
+    var products = Array.from(productList.getElementsByClassName("col-4"));
+
+    if (selectedValue === "default") {
+        // Restore the default order
+        for (var i = 0; i < originalOrder.length; i++) {
+            productList.appendChild(originalOrder[i]);
+        }
+    } else {
+        // Sort products by either price or alphabetically
+        var sortedProducts = products.slice().sort((a, b) => {
+            if (selectedValue === "price") {
+                var valueA = parseFloat(a.querySelector("p").innerText.replace("₱", "").replace(",", ""));
+                var valueB = parseFloat(b.querySelector("p").innerText.replace("₱", "").replace(",", ""));
+                return valueA - valueB;
+            } else if (selectedValue === "alphabetical") {
+                var valueA = a.querySelector("h4").innerText.toLowerCase();
+                var valueB = b.querySelector("h4").innerText.toLowerCase();
+                return valueA.localeCompare(valueB);
+            }
+        });
+
+        // Update the product list with sorted products
+        for (var i = 0; i < sortedProducts.length; i++) {
+            productList.appendChild(sortedProducts[i]);
+        }
+    }
+}
+
+
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    var Menuitems = document.getElementById("Menuitems");
+
+    Menuitems.style.maxHeight = "0px";
+
+    function menutoggle(){
+        if(Menuitems.style.maxHeight == "0px")
+        {
+            Menuitems.style.maxHeight = "200px";
+        }
+        else
+        {
+            Menuitems.style.maxHeight = "0px";
+        }
+    }
+
+
+
+    
+  </script>
+    
+
+</body>
+</html>
+<script src="script.js"></script>

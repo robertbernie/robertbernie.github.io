@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Orbitron&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+
+<div class="container">
+    <div class="navbar">
+        <div class="logo">
+            <a href="index.html"><img src="images/shoelogo-removebg-preview (1).png" width="125px"></a>
+        </div>
+        <nav>
+            <ul id="Menuitems">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="products.html">Product</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="partners.html">Partners</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+        <a href="cart.html"><img src="images/trolley.png" width="30px" height="30px"></a>
+        <img src="images/icons8-menu-50.png" class="menu-icon" onclick="menutoggle()">
+    </div> 
+ 
+</div>
+</div>
+
+
+<div class="small-container">
+    <div class="heading">     
+     <h1>About Us</h1>
+     <img src="images/shoelogo-removebg-preview (1).png">
+    </div>
+    <div class="about-container">
+       <section class="about">
+        <div class="about-image">
+            <img src="images/storeshoe2.jpg">
+        </div>
+        <div class="about-content">
+          <p>In the heart of our shared passion for sneakers, 1-Shoe-3 was born. It began with a simple idea among friends – to create a haven where style meets comfort. From late-night discussions, our journey was fueled by a love for sneakers that tell a story.<br><br>
+            Today, 1-Shoe-3 stands as a testament to our dream. Thank you for being part of our story and making every step in our sneakers a stylish stride.
+            <br><br>
+            Step into history,<br>
+            1-Shoe-3.
+        </p>
+        </div>
+       </section>
+    </div>
+ 
+</div>    
+<hr style="border: 1px dashed;">
+
+      <div class="team-section">
+        <div class="team-container">
+            <div class="team-row">
+                <div class="team-title">
+                    <h1>Our Team</h1>
+                    <p>At 1-Shoe-3, our team is fueled by a shared passion for sneakers and streetwear culture. From sneaker enthusiasts to trend-savvy professionals, our diverse team is united in delivering the latest and most sought-after styles. Get to know the faces behind 1-Shoe-3, a group dedicated to providing top-notch service and curating a collection that speaks to every sneaker lover.</p>
+                </div>
+            </div>
+            <div class="team-card">
+                <div class="card">
+                    <div class="image-section">
+                        <img src="images/banner_1.jpg">
+                    </div>
+                    <div class="content">
+                        <h3>Mary Clara</h3>
+                        <h4>Store Manager</h4>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="image-section">
+                        <img src="images/man1.jpg">
+                    </div>
+                    <div class="content">
+                        <h3>Robert Bernie Manlangit</h3>
+                        <h4>The Founder</h4>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="image-section">
+                        <img src="images/banner_3.jpg">
+                    </div>
+                    <div class="content">
+                        <h3>Bruce Wayne</h3>
+                        <h4>Marketing</h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+      </div>
+    
+
+
+
+
+<!------ footer------------->
+
+
+<div class="footer">
+    <div class="container">
+        <div class="row">
+            <div class="footer-col-1">
+                <p>Gateway Mall 2 <br>255 General Araneta, Cubao, Quezon City, 1109 Metro Manila</p><br>
+                <p>1shoe3@gmail.com</p><br>
+                <p>010-020-030</p><br>
+                <p>Hours: <br> 11:00AM - 10:00PM</p>
+            </div>
+            <div class="footer-col-2">
+                <img src="images/shoelogo.png">
+                <p>©2024 1-SHOE-3 Inc., All Rights Reserved</p>
+            </div>
+            <div class="footer-col-3">
+                <h3>Information</h3>
+                <ul>
+                    <li>Contact Us</li>
+                    <li>About Us </li>
+                    <li>FAQS</li>
+                    <li>Terms of Service</li>
+                    <li>Policy</li>
+                </ul>
+            </div>
+            <div class="footer-col-4">
+                <h3>Follow Us</h3>
+                <ul>
+                    <li><i class="fa-brands fa-facebook"></i></li>
+                    <li><i class="fa-brands fa-instagram"></i></li>
+                    <li><i class="fa-brands fa-youtube"></i></li>
+                </ul>
+        </div>
+    </div>
+</div>
+
+
+<!------ js toggle------------->
+
+  <script>
+    var Menuitems = document.getElementById("Menuitems");
+
+    Menuitems.style.maxHeight = "0px";
+
+    function menutoggle(){
+        if(Menuitems.style.maxHeight == "0px")
+        {
+            Menuitems.style.maxHeight = "200px";
+        }
+        else
+        {
+            Menuitems.style.maxHeight = "0px";
+        }
+    }    
+  </script>
+    
+</body>
+</html>

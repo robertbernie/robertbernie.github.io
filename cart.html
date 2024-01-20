@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Orbitron&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+
+<div class="container">
+    <div class="navbar">
+        <div class="logo">
+            <a href="index.html"><img src="images/shoelogo-removebg-preview (1).png" width="125px"></a>
+        </div>
+        <nav>
+            <ul id="Menuitems">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="products.html">Product</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="partners.html">Partners</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+        <a href="cart.html"><img src="images/trolley.png" width="30px" height="30px"></a>
+        <img src="images/icons8-menu-50.png" class="menu-icon" onclick="menutoggle()">
+    </div> 
+</div>
+
+<!------ cart item------------->
+
+<div class="small-container cart-page">
+    
+    <table>
+        <tr>
+            <th>Product</th>
+            <th>Size</th>
+            <th>Quantity</th>
+            <th>Subtotal</th>
+        </tr>
+        <tr>
+            <td>
+                <div class="cart-info">
+                    <img src="images/air-force-1-07-shoes-0XGfD7 (1).png">
+                    <div>
+                        <p>Air Force 1'07</p>
+                        <small>Price: ₱6,195</small>
+                        <a href="">Remove</a>
+                    </div>
+                </div>
+
+
+            </td>
+            <td><select>
+                <option>Size</option>
+                <option>6</option>
+                <option>6.5</option>
+                <option>7</option>
+                <option>7.5</option>
+                <option>8</option>
+                <option>8.5</option>
+                <option>9</option>
+                <option>9.5</option>
+                <option>10</option>
+                <option>11</option>
+            </select></td>
+            <td><input type="number" value="1"></td>     
+            <td>₱6,195</td>
+        </tr>
+    </table>
+
+    <div class="total-price">
+        <table>
+            <tr>
+                <td>Subtotal</td>
+                <td>₱6,195</td>
+            </tr>
+            <tr>
+                <td>Shipping fee</td>
+                <td>₱250</td>
+            </tr>
+            <tr>
+                <td>total</td>
+                <td>₱6,445</td>
+            </tr>
+            <tr>
+                <td><button type="Submit" class="co-btn">Check Out</td>
+            </tr>
+        </table>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div>   
+
+
+<!------ footer------------->
+
+
+<div class="footer">
+    <div class="container">
+        <div class="row">
+            <div class="footer-col-1">
+                <p>Gateway Mall 2 <br>255 General Araneta, Cubao, Quezon City, 1109 Metro Manila</p><br>
+                <p>1shoe3@gmail.com</p><br>
+                <p>010-020-030</p><br>
+                <p>Hours: <br> 11:00AM - 10:00PM</p>
+            </div>
+            <div class="footer-col-2">
+                <img src="images/shoelogo.png">
+                <p>©2024 1-SHOE-3 Inc., All Rights Reserved</p>
+            </div>
+            <div class="footer-col-3">
+                <h3>Information</h3>
+                <ul>
+                    <li>Contact Us</li>
+                    <li>About Us </li>
+                    <li>FAQS</li>
+                    <li>Terms of Service</li>
+                    <li>Policy</li>
+                </ul>
+            </div>
+            <div class="footer-col-4">
+                <h3>Follow Us</h3>
+                <ul>
+                    <li><i class="fa-brands fa-facebook"></i></li>
+                    <li><i class="fa-brands fa-instagram"></i></li>
+                    <li><i class="fa-brands fa-youtube"></i></li>
+                </ul>
+        </div>
+    </div>
+</div>
+
+
+<!------ js toggle------------->
+
+  <script>
+    var Menuitems = document.getElementById("Menuitems");
+
+    Menuitems.style.maxHeight = "0px";
+
+    function menutoggle(){
+        if(Menuitems.style.maxHeight == "0px")
+        {
+            Menuitems.style.maxHeight = "200px";
+        }
+        else
+        {
+            Menuitems.style.maxHeight = "0px";
+        }
+    }    
+  </script>
+    
+</body>
+</html>
