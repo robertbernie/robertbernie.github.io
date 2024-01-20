@@ -85,7 +85,7 @@ p{
 
 
 .header{
-    background: radial-gradient(#fff, rgb(147, 148, 150));
+    background: radial-gradient(#fff, rgb(200, 200, 200));
 }
 
 .header .row{
@@ -172,6 +172,14 @@ h4{
   color: #ffffff;
   font-size: 15px;
   padding: 60px 0 20px;
+}
+
+.footer-col-3 a{
+    color: #fafafa;
+}
+
+.footer-col-3 a:hover{
+    color: #918a8a;
 }
 
 .footer p{
