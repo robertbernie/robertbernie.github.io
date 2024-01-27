@@ -220,7 +220,6 @@ ul{
 }
 
 
-
 .newsletter{
     display: flex;
     align-items: center;
@@ -263,6 +262,8 @@ ul{
 .newsletter form button:hover{
     background: #563434;
 }
+
+
 
 /*---------- burger -------*/
 
