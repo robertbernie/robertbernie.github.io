@@ -219,6 +219,58 @@ ul{
     list-style-type: none;
 }
 
+
+
+.newsletter{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+}
+
+.newsletter h2{
+    display: flex;
+    flex-direction: column;
+}
+
+.newsletter span:nth-child(2){
+    font-size: 16px;
+    font-weight: 300;
+}
+
+.newsletter form{
+    margin: 20px 10px;
+}
+
+.newsletter form input{
+    height: 40px;
+    width: 17vw;
+    padding: 0 15px;
+    outline: none;
+    margin: 10px;
+}
+
+.newsletter form button{
+    height: 40px;
+    width: 5rem;
+    color: white;
+    background-color: red;
+    border: none;
+    cursor: pointer;
+}
+
+.newsletter form button:hover{
+    background: #563434;
+}
+
+
+
+
+
+
+
+
 /*---------- burger -------*/
 
 .menu-icon{
